@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
 
 //importing json data
@@ -16,7 +16,6 @@ const AboutForm = () => {
     let OptionsListChecked = []
     let OptionsListUnChecked = []
     const DropDownList = []
-
 
     const getOptions = (data) => {
         const RadioQuesData = data.map((item) => item.options.map((item) => item))
